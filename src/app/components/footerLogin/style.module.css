@@ -2,11 +2,7 @@
   height: 100px;
   width: 300px;
 
-  position: absolute;
-  bottom: 0;
-  left: 0;
-
-  margin-left: 40px;
+  margin-left: 20%;
   padding: 20px;
 
   color: rgba(255, 255, 255, 0.384);
@@ -36,4 +32,10 @@
 
 .footer:hover {
   color: rgba(255, 255, 255, 0.842);
+}
+
+@media screen and (max-width: 800px) {
+  .footer {
+    margin: 0 5%;
+  }
 }

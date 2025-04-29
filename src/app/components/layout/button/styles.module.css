@@ -1,0 +1,24 @@
+.buttonComponente {
+  color: var(--text-white-03);
+
+  border: 1px solid var(--border-01);
+
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 500;
+
+  cursor: pointer;
+  transition: color 0.5s ease, background-color 0.5s ease;
+}
+
+.buttonComponente:hover {
+  background-color: var(--bg-yellow-01);
+  color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 500px) {
+  .buttonComponente {
+    width: 100%;
+    margin: 10px 0;
+  }
+}

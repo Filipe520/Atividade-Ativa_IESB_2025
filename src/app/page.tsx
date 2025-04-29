@@ -1,6 +1,10 @@
+// styles css
 import styles from "./stylesLogin.module.css";
 
+// componentes
 import FooterLogin from "./components/footerLogin";
+import HeaderLogin from "./components/header_login";
+import Button from "./components/layout/button";
 
 // Instead of this:
 
@@ -10,6 +14,7 @@ export default function LoginScreen() {
   return (
     <section className={styles.login}>
       <div className={styles.fundoBlack}>
+        <HeaderLogin></HeaderLogin>
         <div className={styles.newDiv}>
           <div className={styles.inscreve_se}>
             <div className={styles.infBanco}>
@@ -31,13 +36,13 @@ export default function LoginScreen() {
             <div className={styles.formLogin}>
               <Form action="/search">
                 <input type="text" placeholder="Endereço de email" />
-                <button type="submit">Inscrever-se</button>
+                <Button type="submit" name="Abra uma conta gratuita"></Button>
               </Form>
             </div>
           </div>
         </div>
+        <FooterLogin></FooterLogin>
       </div>
-      <FooterLogin></FooterLogin>
     </section>
   );
 }

@@ -1,5 +1,5 @@
 // styles css
-import styles from "../../stylesLogin.module.css";
+import styles from "./stylesLogin.module.css";
 
 // componentes
 import FooterLogin from "../../components/footerLogin";

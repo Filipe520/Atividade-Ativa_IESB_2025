@@ -1,14 +1,15 @@
 import styles from "./styles.module.css";
-import "../../../globals.css";
+import "@stylesGlobals.globals.css";
+
 type ButtonProps = {
   type: "button" | "submit" | "reset";
-  name: string;
+  value: string;
 };
 
-export default function Button({ type, name }: ButtonProps) {
+export default function Button({ type, value }: ButtonProps) {
   return (
     <button className={styles.buttonComponente} type={type}>
-      {name}
+      {value}
     </button>
   );
 }

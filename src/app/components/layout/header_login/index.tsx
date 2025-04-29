@@ -1,5 +1,5 @@
-import styles from "./style.module.css";
-import "../../globals.css";
+import styles from "@styles/header_login.module.css";
+import "@stylesGlobals/globals.css";
 
 import Image from "next/image";
 

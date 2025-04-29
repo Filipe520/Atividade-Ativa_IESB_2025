@@ -5,7 +5,7 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import Link from "next/link";
 
 // Styles css
-import styles from "./style.module.css";
+import styles from "@styles/footer_login.module.css";
 
 export default function FooterLogin() {
   return (

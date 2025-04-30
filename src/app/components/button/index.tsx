@@ -1,5 +1,6 @@
-import styles from "./styles.module.css";
-import "@stylesGlobals.globals.css";
+import styles from "@styles/button.module.css";
+
+import "@styles/globals.css";
 
 type ButtonProps = {
   type: "button" | "submit" | "reset";

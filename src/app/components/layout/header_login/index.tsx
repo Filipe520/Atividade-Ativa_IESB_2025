@@ -1,12 +1,17 @@
 import styles from "@styles/header_login.module.css";
-import "@stylesGlobals/globals.css";
+import "@styles/globals.css";
 
 import Image from "next/image";
 
 export default function HeaderLogin() {
   return (
     <div className={styles.headerLogin}>
-      <Image src="/logo01.png" alt="file" width={150} height={50}></Image>
+      <Image
+        src="/imagens/logo01.png"
+        alt="file"
+        width={150}
+        height={50}
+      ></Image>
 
       <nav>
         <ul>

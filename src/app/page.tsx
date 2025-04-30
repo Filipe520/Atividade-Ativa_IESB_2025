@@ -1,22 +1,18 @@
 "use client";
 
 // styles css
-import styles from "./stylesLogin.module.css";
+import styles from "@styles/home.module.css";
 
 // componentes
-import FooterLogin from "@componentslayout/footerLogin";
-import HeaderLogin from "@componentslayout/header_login";
-import Button from "@componentsbutton";
+import FooterLogin from "@components/layout/footerLogin";
+import HeaderLogin from "@components/layout/header_login";
+import Button from "@components/button";
 
 // Lib Node_modules
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 
-export default function LoginScreen({
-  children,
-}: {
-  children?: React.ReactNode;
-}) {
+export default function Home({ children }: { children?: React.ReactNode }) {
   const router = useRouter();
   const [email, setEmail] = useState("");
 

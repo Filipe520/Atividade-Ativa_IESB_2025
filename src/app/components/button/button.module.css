@@ -1,3 +1,6 @@
+@import url("@styles/variables.css");
+@import url("@styles/reset.css");
+
 .buttonComponente {
   color: var(--text-white-03);
 
@@ -13,7 +16,7 @@
 
 .buttonComponente:hover {
   background-color: var(--bg-yellow-01);
-  color: rgb(0, 0, 0);
+  color: var(--color-black-01);
 }
 
 @media screen and (max-width: 500px) {

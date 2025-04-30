@@ -1,4 +1,4 @@
-import styles from "@styles/header_login.module.css";
+import styles from "./header_login.module.css";
 import "@styles/globals.css";
 
 import Image from "next/image";

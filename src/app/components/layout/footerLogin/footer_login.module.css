@@ -1,3 +1,6 @@
+@import url("@styles/variables.css");
+@import url("@styles/reset.css");
+
 .footer {
   height: 100px;
   width: 300px;
@@ -5,7 +8,7 @@
   margin-left: 20%;
   padding: 20px;
 
-  color: rgba(255, 255, 255, 0.384);
+  color: var(--color-white-02);
 
   transition: color 0.5s ease;
 }
@@ -27,11 +30,11 @@
 }
 
 .footer svg:hover {
-  color: rgb(255, 255, 0);
+  color: var(--text-yellow-01);
 }
 
 .footer:hover {
-  color: rgba(255, 255, 255, 0.842);
+  color: var(--color-white-01);
 }
 
 @media screen and (max-width: 800px) {

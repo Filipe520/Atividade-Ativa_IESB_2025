@@ -3,36 +3,6 @@
 
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-
-  --foreground: #171717;
-
-  --fundo: rgba(236, 236, 236, 0.966);
-
-  --bg-black-01: rgba(0, 0, 0, 0.822);
-
-  --bg-yellow-01: rgb(253, 253, 89);
-
-  --border-01: rgb(255, 255, 0);
-
-  --text-yellow-01: rgb(255, 255, 0);
-  --text-yellow-02: rgb(227, 243, 0);
-
-  --text-white-01: rgb(175, 175, 175);
-  --text-white-02: rgb(247, 247, 247);
-  --text-white-03: white;
-
-  --text-transparent-01: rgba(255, 255, 255, 0.705);
-}
-
-* {
-  margin: 0;
-  padding: 0;
-
-  box-sizing: border-box;
-}
-
 body {
   background: var(--background);
   color: var(--foreground);

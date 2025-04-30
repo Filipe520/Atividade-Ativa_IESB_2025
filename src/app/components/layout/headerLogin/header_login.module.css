@@ -1,3 +1,6 @@
+@import url("@styles/variables.css");
+@import url("@styles/reset.css");
+
 .headerLogin {
   display: flex;
 

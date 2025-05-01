@@ -2,19 +2,24 @@
 @import url("@styles/reset.css");
 
 .footer {
-  height: 100px;
-  width: 300px;
+  background-color: rgb(0, 0, 0);
 
-  margin-left: 20%;
-  padding: 20px;
+  padding: 50px 0;
+}
+
+.footerFilho {
+  height: 100px;
+
+  padding: 10px 0;
 
   color: var(--color-white-02);
 
   transition: color 0.5s ease;
-}
 
-.footer ul {
-  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .footer li {
@@ -35,6 +40,15 @@
 
 .footer:hover {
   color: var(--color-white-01);
+}
+
+.copy2025 {
+  transition: color 0.5s ease;
+}
+
+.copy2025:hover {
+  text-decoration: underline;
+  color: var(--text-yellow-01);
 }
 
 @media screen and (max-width: 800px) {

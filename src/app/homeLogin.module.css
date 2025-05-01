@@ -2,12 +2,6 @@
 @import url("styles/reset.css");
 
 .login {
-  background-image: url("/imagens/fundoLogin.jpg");
-
-  background-position: left center;
-  background-size: cover;
-  background-repeat: no-repeat;
-
   height: 100dvh;
 }
 
@@ -28,7 +22,7 @@
 }
 
 .inscreve_se {
-  max-width: 600px;
+  max-width: 700px;
 
   margin: 0 10px 0 20%;
 

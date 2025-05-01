@@ -4,8 +4,6 @@
 import styles from "./homeLogin.module.css";
 
 // componentes
-import FooterLogin from "@components/layout/footerLogin";
-import HeaderLogin from "@components/layout/headerLogin";
 import Button from "@components/button";
 
 // Lib Node_modules
@@ -18,17 +16,16 @@ export default function Home() {
 
   const handleSubmit = (e) => {
     e.preventDefault(); // inpede o envio tradicional do form
-    router.push(`/login/formLogin?email=${encodeURIComponent(email)}`);
+    router.push(`/login/registrar?email=${encodeURIComponent(email)}`);
   };
 
   return (
     <section className={styles.login}>
       <div className={styles.fundoBlack}>
-        <HeaderLogin />
         <div className={styles.newDiv}>
           <div className={styles.inscreve_se}>
             <div className={styles.infBanco}>
-              <h1>Banco Cripto</h1>
+              <h1>CypherBank</h1>
               <p>
                 O <strong>Banco Cripto</strong> é uma instituição financeira
                 inovadora que utiliza a tecnologia <strong>blockchain</strong>{" "}
@@ -57,7 +54,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <FooterLogin />
       </div>
     </section>
   );

@@ -8,12 +8,14 @@ import Link from "next/link";
 export default function HeaderLogin() {
   return (
     <div className={styles.headerLogin}>
-      <Image
-        src="/imagens/logo01.png"
-        alt="file"
-        width={150}
-        height={50}
-      ></Image>
+      <Link href="/">
+        <Image
+          src="/imagens/logo01.png"
+          alt="file"
+          width={150}
+          height={50}
+        ></Image>
+      </Link>
 
       <nav>
         <ul>

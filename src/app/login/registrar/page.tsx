@@ -5,8 +5,8 @@ import Input from "@components/input";
 
 export default function Registrar() {
   return (
-    <div className="text-amber-50 h-[100vh] flex items-center justify-center flex-col bg-gray-950/80 pt-9">
-      <main className="bg-white w-[800px] flex items-center justify-center text-black rounded-xl overflow-hidden shadow-lg">
+    <div className="text-amber-50 h-9/12 flex items-center justify-center flex-col bg-gray-950/80 pt-40">
+      <main className="bg-white max-w-5xl flex items-center justify-center text-black rounded-xl overflow-hidden shadow-lg">
         {/* Lado esquerdo */}
         <section className="h-[600px] w-full flex items-center justify-center flex-col px-6 py-10 gap-6">
           <div className="text-center">

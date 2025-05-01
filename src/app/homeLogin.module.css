@@ -1,10 +1,6 @@
 @import url("styles/variables.css");
 @import url("styles/reset.css");
 
-.login {
-  height: 100dvh;
-}
-
 .fundoBlack {
   background-color: var(--bg-black-01);
 
@@ -24,7 +20,7 @@
 .inscreve_se {
   max-width: 700px;
 
-  margin: 0 10px 0 20%;
+  margin: 0 10px 0 10%;
 
   padding: 20px;
   border-radius: 10px;

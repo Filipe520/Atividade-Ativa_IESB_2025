@@ -1,3 +1,5 @@
+"use client";
+
 // React Icons
 import { FaHome } from "react-icons/fa";
 import { IoSearchOutline } from "react-icons/io5";

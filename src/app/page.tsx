@@ -5,8 +5,8 @@ import styles from "./homeLogin.module.css";
 
 // componentes
 import Button from "@components/button";
-import HeaderMobile from "@components/layout/headerLogin/mobile";
-import HeaderDesktop from "@components/layout/headerLogin/headerDesktop";
+import HeaderMobile from "@components/layout/header/headerMobile";
+import HeaderDesktop from "@components/layout/header/headerDesktop";
 
 // Lib Node_modules
 import { useRouter } from "next/navigation";
@@ -16,8 +16,8 @@ export default function Home() {
   const router = useRouter();
   const [email, setEmail] = useState("");
 
-  const handleSubmit = () => {
-    params.preventDefault(); // inpede o envio tradicional do form
+  const handleSubmit = (event: React.FormEvent) => {
+    event.preventDefault(); // inpede o envio tradicional do form
     router.push(`/login/registrar?email=${encodeURIComponent(email)}`);
   };
 
@@ -32,7 +32,7 @@ export default function Home() {
           {/* Desktop */}
           <div className={styles.inscreve_se}>
             <div className={`${styles.infBanco} md:block hidden`}>
-              <h1>BitNEXT bank</h1>
+              <h1>BitNext bank</h1>
               <p>
                 O <strong>BitNext</strong> é uma instituição financeira
                 inovadora que utiliza a tecnologia <strong>blockchain</strong>{" "}

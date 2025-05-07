@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     "Transforme suas finanças com a segurança e transparência da tecnologia blockchain.",
 };
 
-import FooterLogin from "@components/layout/footerLogin";
+import FooterLogin from "@components/layout/footer";
 
 export default function RootLayout({
   children,

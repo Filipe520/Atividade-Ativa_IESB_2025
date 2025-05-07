@@ -1,7 +1,0 @@
-.headerLogin li:hover {
-  color: var(--text-yellow-02);
-}
-
-.headerLogin li:active {
-  opacity: 0.8;
-}

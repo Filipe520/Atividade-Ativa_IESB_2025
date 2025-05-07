@@ -18,7 +18,6 @@ export const metadata: Metadata = {
     "Transforme suas finanças com a segurança e transparência da tecnologia blockchain.",
 };
 
-import HeaderLogin from "@components/layout/headerLogin";
 import FooterLogin from "@components/layout/footerLogin";
 
 export default function RootLayout({
@@ -31,7 +30,6 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <HeaderLogin></HeaderLogin>
         {children}
         <FooterLogin />
       </body>

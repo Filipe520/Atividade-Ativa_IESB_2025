@@ -8,8 +8,6 @@
 }
 
 .footerFilho {
-  height: 100px;
-
   padding: 10px 0;
 
   color: var(--color-white-02);
@@ -49,4 +47,44 @@
 .copy2025:hover {
   text-decoration: underline;
   color: var(--text-yellow-01);
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 10px 0;
+
+    display: flex;
+    justify-content: center;
+  }
+  .boxFilhoFooter {
+    max-width: 300px;
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .boxFilhoFooter {
+    max-width: 200px;
+
+    height: 50dvh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    flex-direction: column;
+  }
+
+  .footerFilho {
+    height: 25dvh;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .boxFilho2 {
+    display: flex;
+    height: 25dvh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
 }

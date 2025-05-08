@@ -2,7 +2,6 @@
 
 // React Icons
 import { FaHome } from "react-icons/fa";
-import { IoSearchOutline } from "react-icons/io5";
 import { HiOutlineBellAlert } from "react-icons/hi2";
 import { GoGear } from "react-icons/go";
 import { IoHelpCircleOutline } from "react-icons/io5";
@@ -19,6 +18,8 @@ import Link from "next/link";
 // Font
 import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["cyrillic-ext"] });
+
+import FormSearch from "@components/formSearch";
 
 // Image da logo
 import Image from "next/image";
@@ -58,7 +59,7 @@ export default function HeaderMobile() {
             <section className="flex flex-col gap-7 text-base mt-10">
               {/* Imagens logo */}
               <div className="flex items-center gap-4">
-                <Link href="#">
+                <Link href="/">
                   <Image
                     src={imgLogo}
                     alt="Imagem da logo do banco"
@@ -72,26 +73,15 @@ export default function HeaderMobile() {
                     handledMenu ? "block" : "hidden"
                   } font-extrabold text-2xl`}
                 >
-                  BitNext
+                  <Link href="/">BitNext</Link>
                 </h1>
               </div>
-              <form
-                className={`transition-all ease-out ${
-                  handledMenu ? "w-[260px]" : "w-10"
-                } bg-black/70 p-2 rounded-md text-white flex text-base`}
-              >
-                <label htmlFor="idSearch" className="cursor-pointer m-1 ">
-                  <IoSearchOutline />
-                </label>
-                <input
-                  type="text"
-                  placeholder="Search..."
-                  id="idSearch"
-                  className={`${
-                    handledMenu ? "flex fixed" : "hidden"
-                  } ml-5 pl-1 w-45 outline-none animate-pulse`}
-                />
-              </form>
+              {/* Formulário de busca */}
+              <FormSearch
+                placeholder="Search..."
+                handledMenu={handledMenu}
+                widthInput="w-65"
+              />
             </section>
 
             <section
@@ -101,36 +91,46 @@ export default function HeaderMobile() {
             >
               {/* Botão Sign in */}
               <div className="flex items-center">
-                <MdOutlinePersonOutline
-                  className={`text-lg ${
-                    handledMenu ? "hidden" : "block"
-                  } cursor-pointer  hover:text-blue-500 text-shadow-lg transition-colors ease`}
-                />
+                <Link href="/login">
+                  <MdOutlinePersonOutline
+                    className={`text-lg ${
+                      handledMenu ? "hidden" : "block"
+                    } cursor-pointer  hover:text-blue-500 text-shadow-lg transition-colors ease`}
+                  />
+                </Link>
                 <button
                   className={`${
                     handledMenu ? "flex" : "hidden"
                   } py-2 px-3 bg-black/70 rounded-md w-full text-white items-center justify-center gap-2`}
                 >
                   <MdOutlinePersonOutline />
-                  <Link href="#" className="hover:text-white/30 text-white">
+                  <Link
+                    href="/login"
+                    className="hover:text-white/30 text-white"
+                  >
                     Sign in
                   </Link>
                 </button>
               </div>
               {/* Botão Sign up */}
               <div className="flex items-center mt-5">
-                <CiLogin
-                  className={`text-xl" ${
-                    handledMenu ? "hidden" : "block"
-                  } cursor-pointer  hover:text-blue-500 text-shadow-lg transition-colors ease`}
-                />
+                <Link href="/login/registrar">
+                  <CiLogin
+                    className={`text-xl" ${
+                      handledMenu ? "hidden" : "block"
+                    } cursor-pointer  hover:text-blue-500 text-shadow-lg transition-colors ease`}
+                  />
+                </Link>
                 <button
                   className={`${
                     handledMenu ? "flex" : "hidden"
                   } py-2 px-3 bg-blue-600 rounded-md w-full gap-2 items-center justify-center text-white`}
                 >
                   <CiLogin className="text-xl" />
-                  <Link href="#" className="hover:text-gray-900 animate-pulse">
+                  <Link
+                    href="/login/registrar"
+                    className="hover:text-gray-900 animate-pulse"
+                  >
                     Sign up
                   </Link>
                 </button>
@@ -143,7 +143,7 @@ export default function HeaderMobile() {
                 <div className="flex items-center cursor-pointer  hover:text-blue-500 text-shadow-lg transition-colors ease relative">
                   <FaHome className="text-lg" />
                   <li className={`${handledMenu ? "flex" : "hidden"}  ml-3`}>
-                    Home
+                    <Link href="/">Home</Link>
                   </li>
                 </div>
                 {/* Icone Dashboard */}

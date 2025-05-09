@@ -5,7 +5,7 @@ import { FaHome } from "react-icons/fa";
 import { HiOutlineBellAlert } from "react-icons/hi2";
 import { GoGear } from "react-icons/go";
 import { IoHelpCircleOutline } from "react-icons/io5";
-import { LuBox } from "react-icons/lu";
+import { BsBuildings } from "react-icons/bs";
 import { TbAdjustmentsDollar } from "react-icons/tb";
 import { CiMenuKebab } from "react-icons/ci";
 import { CiLogin } from "react-icons/ci";
@@ -19,8 +19,6 @@ import Link from "next/link";
 import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["cyrillic-ext"] });
 
-import FormSearch from "@components/formSearch";
-
 // Image da logo
 import Image from "next/image";
 import imgLogo from "@public/imagens/logo_sem_fundo.png";
@@ -31,7 +29,7 @@ export default function HeaderMobile() {
     <>
       {/*NavBar Mobile */}
       <section
-        className={`${inter} w-screen md:hidden flex justify-around md:bg-white`}
+        className={`${inter} w-screen md:hidden flex justify-between md:bg-white`}
       >
         {/* Menu aberto ?*/}
         <nav
@@ -51,7 +49,7 @@ export default function HeaderMobile() {
           </div>
 
           <div
-            className={`flex flex-col justify-around gap-5 h-full text-lg relative ${
+            className={`flex flex-col justify-evenly gap-5 h-full text-lg relative ${
               handledMenu ? "pl-5" : "items-center"
             }`}
           >
@@ -76,12 +74,6 @@ export default function HeaderMobile() {
                   <Link href="/">BitNext</Link>
                 </h1>
               </div>
-              {/* Formulário de busca */}
-              <FormSearch
-                placeholder="Search..."
-                handledMenu={handledMenu}
-                widthInput="w-65"
-              />
             </section>
 
             <section
@@ -108,12 +100,12 @@ export default function HeaderMobile() {
                     href="/login"
                     className="hover:text-white/30 text-white"
                   >
-                    Sign in
+                    Entrar
                   </Link>
                 </button>
               </div>
               {/* Botão Sign up */}
-              <div className="flex items-center mt-5">
+              <div className="flex items-center">
                 <Link href="/login/registrar">
                   <CiLogin
                     className={`text-xl" ${
@@ -131,7 +123,7 @@ export default function HeaderMobile() {
                     href="/login/registrar"
                     className="hover:text-gray-900 animate-pulse"
                   >
-                    Sign up
+                    Inscreva-se
                   </Link>
                 </button>
               </div>
@@ -146,18 +138,22 @@ export default function HeaderMobile() {
                     <Link href="/">Home</Link>
                   </li>
                 </div>
-                {/* Icone Dashboard */}
-                <div className="flex items-center cursor-pointer  hover:text-blue-500 text-shadow-lg transition-colors ease relative">
-                  <LuBox />
-                  <li className={`${handledMenu ? "flex" : "hidden"}  ml-3`}>
-                    Dashboard
-                  </li>
-                </div>
                 {/* Icone Ativos Financeiros*/}
                 <div className="flex items-center cursor-pointer  hover:text-blue-500 text-shadow-lg transition-colors ease relative">
-                  <TbAdjustmentsDollar className="text-xl" />
+                  <Link href="/ativos-financeiros">
+                    <TbAdjustmentsDollar className="text-xl" />
+                  </Link>
                   <li className={`${handledMenu ? "flex" : "hidden"}  ml-3`}>
-                    Financial Assets
+                    <Link href="/ativos-financeiros">Ativos financeiros</Link>
+                  </li>
+                </div>
+                {/* Icone Dashboard */}
+                <div className="flex items-center cursor-pointer  hover:text-blue-500 text-shadow-lg transition-colors ease relative">
+                  <Link href="sobre">
+                    <BsBuildings />
+                  </Link>
+                  <li className={`${handledMenu ? "flex" : "hidden"}  ml-3`}>
+                    <Link href="sobre">Sobre nós</Link>
                   </li>
                 </div>
               </ul>

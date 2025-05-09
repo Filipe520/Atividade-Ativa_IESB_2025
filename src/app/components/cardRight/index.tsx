@@ -16,7 +16,7 @@ export default function CardRight({ src, alt, h2, p_1, p_2 }: Props) {
         backgroundImage: "url('/imagens/fundoCard-01-about.jpg')",
       }}
     >
-      <div className="bg-white/90 w-full p-5 rounded-2xl flex max-[500px]:flex-col">
+      <div className="bg-white/90 w-full p-5 rounded-2xl flex max-sm:flex-col">
         <section className="w-full flex items-center justify-center">
           <div>
             <Image src={src} alt={alt} width={300} height={300} />

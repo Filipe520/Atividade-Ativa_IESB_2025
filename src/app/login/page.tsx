@@ -4,12 +4,14 @@ import Link from "next/link";
 // Components
 import Input from "@components/input";
 import ButtonBlue from "@components/buttonBlue";
+import ButtonBlack from "@components/buttonBlack";
 import HeaderDesktop from "@components/layout/header/headerDesktop";
 import HeaderMobile from "@components/layout/header/headerMobile";
 import Image from "next/image";
 
 // Icone
 import { MdOutlinePersonOutline } from "react-icons/md";
+import { CiLogin } from "react-icons/ci";
 
 // imgs
 import imgLogin from "@public/imagens/login.svg";
@@ -52,7 +54,7 @@ export default function Login() {
         <section className="bg-white text-black mr-5 min-[500px]:border border-black/20 flex flex-col items-center justify-center gap-5 min-[500px]:shadow-lg h-150 p-10 md:rounded-r-2xl max-[767px]:rounded-4xl max-[600px]:ml-16 max-[500px]:rounded-none ">
           <section>
             <h1
-              className={`text-4xl text-center font-[900] mb-5 max-[500px]:pt-10`}
+              className={`text-4xl text-center font-extrabold mb-5 max-[500px]:pt-10`}
             >
               Bem-Vindo <br></br> de volta!
             </h1>
@@ -90,6 +92,11 @@ export default function Login() {
             <ButtonBlue
               icone={<MdOutlinePersonOutline />}
               textButton="Entrar"
+              router="/login/registrar"
+            />
+            <ButtonBlack
+              icone={<CiLogin />}
+              textButton="Inscreva-se"
               router="/login/registrar"
             />
           </form>

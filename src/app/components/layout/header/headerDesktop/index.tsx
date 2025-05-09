@@ -21,7 +21,7 @@ export default function HeaderDesktop() {
     <header
       className={`
         flex justify-around items-center w-full
-         md:bg-white text-black md:pt-5
+         md:bg-white text-black md:pt-5 min-md:pb-5
          ${inter.className}`}
     >
       {/* Desktop */}
@@ -34,16 +34,16 @@ export default function HeaderDesktop() {
             height={40}
           />
         </Link>
-        <h1 className="font-extrabold text-2xl hidden md:block pr-3 pl-1">
+        <h1 className="font-extrabold text-2xl hidden md:block">
           <Link href="/">BitNext</Link>
         </h1>
       </div>
 
-      <nav className="md:flex justify-center gap-2.5 w-lg max-w-[500px] hidden">
+      <nav className="md:flex justify-center gap-2.5 w-lg  hidden">
         <HeaderDesktopLinks />
       </nav>
       <section
-        className={`flex items-center max-md:hidden gap-4 text-sm w-[260px]`}
+        className={`flex items-center max-md:hidden gap-2 text-sm  w-70`}
       >
         {/* Botão Entrar */}
         <ButtonBlack

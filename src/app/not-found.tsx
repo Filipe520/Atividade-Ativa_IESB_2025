@@ -19,10 +19,11 @@ export default function NotFound() {
         <div className="flex flex-col gap-5 ">
           <p className="text-indigo-600">404</p>
           <h1 className="md:text-5xl max-md:text-4xl font-black">
-            Page not found
+            Página não encontrada
           </h1>
           <p className="text-black/70">
-            Sorry, we couldn’t find the page you’re looking for.
+            Desculpe, não conseguimos encontrar a página que você está
+            procurando.
           </p>
 
           <div>
@@ -31,7 +32,7 @@ export default function NotFound() {
               className="text-indigo-600 hover:underline flex gap-1.5 items-center animate-pulse"
             >
               <GoArrowLeft />
-              Back to home
+              De volta para casa
             </Link>
           </div>
         </div>

@@ -21,7 +21,7 @@ export default function HeaderDesktop() {
     <header
       className={`
         flex justify-around items-center w-full
-         md:bg-white text-black md:pt-5 min-md:pb-5
+         md:bg-black/90 text-white md:pt-5 min-md:pb-5
          ${inter.className}`}
     >
       {/* Desktop */}

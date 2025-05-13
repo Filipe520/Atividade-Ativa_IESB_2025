@@ -38,7 +38,7 @@ export default function Login() {
                   height={80}
                 />
               </div>
-              <h1 className="text-3xl">
+              <h1 className="text-3xl text-gray-600">
                 <strong>BitNext Bank</strong>
               </h1>
             </section>
@@ -92,7 +92,7 @@ export default function Login() {
             <ButtonBlue
               icone={<MdOutlinePersonOutline />}
               textButton="Entrar"
-              router="/login/registrar"
+              router="/home"
             />
             <ButtonBlack
               icone={<CiLogin />}

@@ -29,23 +29,23 @@ export default function HeaderMobile() {
     <>
       {/*NavBar Mobile */}
       <section
-        className={`${inter} w-screen md:hidden flex justify-between md:bg-white`}
+        className={`${inter} w-screen md:hidden flex justify-between md:bg-white/10 `}
       >
         {/* Menu aberto ?*/}
         <nav
           className={`${
             handledMenu ? "opacity-100 w-75 h-dvh" : "w-15 h-screen"
           }
-          md:hidden flex flex-col bg-white left-0 top-0 rounded-sm transition-all fixed`}
+          md:hidden flex flex-col bg-black/50 text-white left-0 top-0 rounded-sm transition-all fixed`}
         >
           {/* Humburguer */}
           <div
             onClick={() => setHandledMenu(!handledMenu)}
-            className={`cursor-pointer md:hidden flex-col gap-1 flex absolute top-4 z-10 bg-gray-100 p-3 rounded-sm ml-2`}
+            className={`cursor-pointer md:hidden flex-col gap-1 flex absolute top-4 z-10 p-3 rounded-sm ml-2`}
           >
-            <span className="w-5 h-0.5 bg-gray-700 block"></span>
-            <span className="w-5 h-0.5 bg-gray-700 block"></span>
-            <span className="w-5 h-0.5 bg-gray-700 block"></span>
+            <span className="w-5 h-0.5 bg-white block"></span>
+            <span className="w-5 h-0.5 bg-white"></span>
+            <span className="w-5 h-0.5 bg-white"></span>
           </div>
 
           <div
@@ -133,9 +133,11 @@ export default function HeaderMobile() {
               <ul className="flex flex-col gap-5 text-base">
                 {/* Icone Home */}
                 <div className="flex items-center cursor-pointer  hover:text-blue-500 text-shadow-lg transition-colors ease relative">
-                  <FaHome className="text-lg" />
+                  <Link href="/">
+                    <FaHome className="text-lg" />
+                  </Link>
                   <li className={`${handledMenu ? "flex" : "hidden"}  ml-3`}>
-                    <Link href="/">Home</Link>
+                    <Link href="/">Início</Link>
                   </li>
                 </div>
                 {/* Icone Ativos Financeiros*/}

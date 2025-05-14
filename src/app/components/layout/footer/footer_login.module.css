@@ -33,7 +33,7 @@
 }
 
 .footer svg:hover {
-  color: var(--text-yellow-01);
+  color: var(--text-blue-01);
 }
 
 .footer:hover {
@@ -46,7 +46,7 @@
 
 .copy2025:hover {
   text-decoration: underline;
-  color: var(--text-yellow-01);
+  color: var(--text-blue-01);
 }
 
 @media (max-width: 768px) {
@@ -56,6 +56,7 @@
     display: flex;
     justify-content: center;
   }
+
   .boxFilhoFooter {
     max-width: 300px;
     margin-left: 50px;

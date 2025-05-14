@@ -93,11 +93,13 @@ export default function Login() {
               icone={<MdOutlinePersonOutline />}
               textButton="Entrar"
               router="/home"
+              color="bg-blue-500 text-white text-center justify-center"
             />
             <ButtonBlack
               icone={<CiLogin />}
               textButton="Inscreva-se"
               router="/login/registrar"
+              color="bg-black text-white"
             />
           </form>
 

@@ -8,24 +8,24 @@ type ButtonBlackProps = {
   textButton: string;
   router: string;
   icone: React.ReactNode;
+  color?: string;
 };
 
 export default function ButtonBlack({
   textButton,
   router,
   icone,
+  color,
 }: ButtonBlackProps) {
   const libRouter = useRouter();
   return (
-    <div className="flex items-center">
+    <div className={`flex items-center ${color}`}>
       <button
-        className={`py-2 px-3 bg-black/70 rounded-md w-full text-white items-center justify-center gap-2 flex`}
+        className={`py-2 px-3 w-full items-center justify-center gap-2 flex`}
         onClick={() => libRouter.push(router)}
       >
         {icone}
-        <Link href="#" className="hover:text-white/30 text-white">
-          {textButton}
-        </Link>
+        <Link href="#">{textButton}</Link>
       </button>
     </div>
   );

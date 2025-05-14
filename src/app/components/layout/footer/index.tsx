@@ -1,6 +1,7 @@
 // Lib Icons
 import { FaFacebook, FaInstagram, FaGithub } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaLink } from "react-icons/fa6";
 
 import Link from "next/link";
 
@@ -67,17 +68,29 @@ export default function FooterLogin() {
             </li>
           </ul>
 
-          <p className="text-gray-400 text-center">
-            Copyright &copy; 2025{" "}
+          <p className="text-gray-400 text-center">Copyright &copy; 2025</p>
+
+          <div className="flex gap-2 text-white/80 mt-2">
             <Link
               href="https://github.com/Filipe520"
               target="_blank"
               rel="external"
               className={styles.copy2025}
             >
-              <br></br> Filipe Alves
+              <FaLink />
             </Link>
-          </p>
+
+            <p>
+              <Link
+                href="https://github.com/Filipe520"
+                target="_blank"
+                rel="external"
+                className={styles.copy2025}
+              >
+                Filipe Alves
+              </Link>
+            </p>
+          </div>
         </div>
       </section>
     </footer>

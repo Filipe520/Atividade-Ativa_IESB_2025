@@ -13,8 +13,7 @@ import { CiLogin } from "react-icons/ci";
 
 // Componentes
 import HeaderDesktopLinks from "./links";
-import ButtonBlack from "@components/buttonBlack";
-import ButtonBlue from "@components/buttonBlue";
+import { ButtonCustom } from "@components/buttonCuston";
 
 export default function HeaderDesktop() {
   return (
@@ -46,16 +45,17 @@ export default function HeaderDesktop() {
         className={`flex items-center max-md:hidden gap-2 text-sm  w-70`}
       >
         {/* Botão Entrar */}
-        <ButtonBlack
-          textButton="Entrar"
+        <ButtonCustom
+          textButton="Login"
           router="/login"
           icone={<MdOutlinePersonOutline />}
+          color={`border border-transparent hover:border text-white rounded-md hover:border-sky-500`}
         />
-        {/* Botão Sign up */}
-        <ButtonBlue
+        <ButtonCustom
+          textButton="Inscreva-se"
           router="/login/registrar"
-          textButton="Inscrever-se"
-          icone={<CiLogin className="text-base" />}
+          icone={<CiLogin />}
+          color={`text-white rounded-md border border-transparent hover:border-white`}
         />
       </section>
     </header>

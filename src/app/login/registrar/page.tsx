@@ -1,12 +1,18 @@
 import Image from "next/image";
-import "@styles/variables.css";
+
+import styles from "./styles.module.css";
 
 import Link from "next/link";
 
 import HeaderDesktop from "@components/layout/header/headerDesktop";
 import HeaderMobile from "@components/layout/header/headerMobile";
 
+// Componente
 import Input from "@components/input";
+import { ButtonCustom } from "@components/buttonCuston";
+
+// icon
+import { AiOutlineAudit } from "react-icons/ai";
 
 export default function Registrar() {
   return (
@@ -35,25 +41,44 @@ export default function Registrar() {
           {/* Lado direito */}
           <section className="md:border-l border-gray-300/80 md:h-[600px] w-full px-8 py-10 flex flex-col md:justify-between max-md:justify-center max-md:h-dvh max-[500px]:ml-12 max-md:ml-12">
             <section>
-              <h2 className="text-3xl text-center font-bold mb-6">
-                Cadastre-se no <br /> Banco BitNext
-              </h2>
+              <section className="w-full py-10">
+                <h1 className={`text-3xl font-bold mb-5`}>Cadastre-se</h1>
+                <p className="text-black/60 text-sm">
+                  insira suas informações para se registrar
+                </p>
+              </section>
 
               <form className="flex flex-col gap-4">
                 <Input
+                  id="email"
+                  color="bg-black/5 text-black"
                   type="email"
                   placeholder="Número de telefone ou e-mail"
                 />
-                <Input type="password" placeholder="Palavra-passe" />
-                <Input type="text" placeholder="Nome completo" />
-                <Input type="text" placeholder="Nome de utilizador" />
-
-                <button
-                  type="submit"
-                  className="bg-blue-600 text-white py-2 rounded-md mt-4 hover:bg-blue-700"
-                >
-                  Registar
-                </button>
+                <Input
+                  type="password"
+                  placeholder="Palavra-passe"
+                  color="bg-black/5 text-black"
+                  id="password"
+                />
+                <Input
+                  type="text"
+                  placeholder="Nome completo"
+                  color="bg-black/5 text-black"
+                  id="fullName"
+                />
+                <Input
+                  type="text"
+                  placeholder="Nome de utilizador"
+                  color="bg-black/5 text-black"
+                  id="nameUsed"
+                />
+                <ButtonCustom
+                  router="/login"
+                  textButton="Registar"
+                  icone={<AiOutlineAudit />}
+                  color={`${styles.bg_Custon} text-white rounded-xl border border-transparent hover:border-blue-500`}
+                />
               </form>
 
               <p className="text-xs text-gray-600 mt-4">

@@ -29,14 +29,14 @@ export default function HeaderMobile() {
     <>
       {/*NavBar Mobile */}
       <section
-        className={`${inter} w-screen md:hidden flex justify-between md:bg-white/10 `}
+        className={`${inter} w-screen md:hidden flex justify-between md:bg-white/10`}
       >
         {/* Menu aberto ?*/}
         <nav
           className={`${
             handledMenu ? "opacity-100 w-75 h-dvh" : "w-15 h-screen"
           }
-          md:hidden flex flex-col bg-black/50 text-white left-0 top-0 rounded-sm transition-all fixed`}
+          md:hidden flex flex-col bg-black text-white left-0 top-0 rounded-sm transition-all fixed`}
         >
           {/* Humburguer */}
           <div
@@ -198,7 +198,7 @@ export default function HeaderMobile() {
             >
               <div className="flex items-center justify-around w-full gap-3 text-base">
                 <Link href="#">
-                  <div className="bg-black/80 rounded-full h-10 w-10 relative flex items-center">
+                  <div className="bg-white/40 rounded-full h-10 w-10 relative flex items-center border border-sky-500">
                     <span className="bg-green-300 rounded-full h-3 w-3 z-20 absolute bottom-7 left-7"></span>
                   </div>
                 </Link>

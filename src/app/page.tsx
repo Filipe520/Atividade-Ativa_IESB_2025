@@ -27,7 +27,7 @@ export default function Home() {
       {/* <HeaderMobile /> */}
       <HeaderMobile />
 
-      <main className="max-[500px]:ml-15 flex flex-col justify-center min-[500px]:items-center">
+      <main className="flex flex-col justify-center min-[500px]:items-center">
         {/* Home */}
         <section
           className="h-dvh w-full flex flex-col justify-center items-center m-auto bg-no-repeat bg-fixed bg-cover bg-center"
@@ -74,66 +74,69 @@ export default function Home() {
             </section>
           </div>
         </section>
-        <div>
-          <section className="bg-white rounded-3xl flex flex-col p-2 py-20 justify-between items-center min-[500px]:w-full">
-            <article>
-              <h2 className={` text-black text-4xl text-center  pb-10`}>
-                Sua Economia <br></br> Digital Começa Aqui
-              </h2>
-            </article>
+        <div className="w-full">
+          <section className="bg-white rounded-3xl flex flex-col p-5 py-20 justify-between items-center max-md:ml-15">
+            <div className="flex flex-col justify-center items-center w-full">
+              <article>
+                <h2 className={` text-black text-4xl text-center  pb-10`}>
+                  Sua Economia <br></br> Digital Começa Aqui
+                </h2>
+              </article>
 
-            <article className="w-[300px] py-5">
-              <Image
-                src={imgIphone12}
-                alt="Imagem do Iphone 12"
-                width={400}
-                height={400}
-              />
-            </article>
+              <article className="w-[300px] py-5">
+                <Image
+                  src={imgIphone12}
+                  alt="Imagem do Iphone 12"
+                  width={400}
+                  height={400}
+                />
+              </article>
 
-            <article className="max-w-[500px] py-10 mt-5 text-xl border-sky-600 border rounded-xl p-5">
-              <div className="flex flex-col  gap-2 justify-center items-center">
-                <div>
-                  <div className="border-sky-500 border rounded-full inline-block p-2">
-                    <HiOutlineBellAlert />
+              <article className="max-w-[500px] py-10 mt-5 text-xl border-sky-600 border rounded-xl p-5">
+                <div className="flex flex-col  gap-2 justify-center items-center">
+                  <div>
+                    <div className="border-sky-500 border rounded-full inline-block p-2">
+                      <HiOutlineBellAlert />
+                    </div>
+                  </div>
+                  <div>
+                    <h2 className="font-semibold py-5">
+                      Você Sempre no Controle
+                    </h2>
+                    <p className="text-center text-base">
+                      Receba alertas sobre movimentações, acessos e limites da
+                      sua conta. Transparência e proteção na palma da mão.
+                    </p>
                   </div>
                 </div>
-                <div>
-                  <h2 className="font-semibold py-5">
-                    Você Sempre no Controle
+              </article>
+
+              <article className="w-full py-10 flex flex-col justify-center items-center">
+                <section className="flex flex-col gap-5">
+                  <p className="text-blue-900">Mais agilidade no seu banco</p>
+                  <h2 className="text-4xl">
+                    Tudo o que você precisa para operar com velocidade e
+                    segurança
                   </h2>
-                  <p className="text-center text-base">
-                    Receba alertas sobre movimentações, acessos e limites da sua
-                    conta. Transparência e proteção na palma da mão.
-                  </p>
-                </div>
-              </div>
-            </article>
+                </section>
 
-            <article className="w-full py-10 flex flex-col justify-center items-center">
-              <section className="flex flex-col gap-5">
-                <p className="text-blue-900">Mais agilidade no seu banco</p>
-                <h2 className="text-4xl">
-                  Tudo o que você precisa para operar com velocidade e segurança
-                </h2>
-              </section>
+                <InfoBlock
+                  icon={<FiZap className="text-sky-600 w-5 h-5" />}
+                  titulo="Atendimento instantâneo"
+                  paragrafo="Respostas em tempo real para as operações mais críticas. Menos
+                      espera, mais resultado. Transações processadas em milissegundos
+                      com alta confiabilidade."
+                />
 
-              <InfoBlock
-                icon={<FiZap className="text-sky-600 w-5 h-5" />}
-                titulo="Atendimento instantâneo"
-                paragrafo="Respostas em tempo real para as operações mais críticas. Menos
-                  espera, mais resultado. Transações processadas em milissegundos
-                  com alta confiabilidade."
-              />
-
-              <InfoBlock
-                icon={<GiPadlock className="text-sky-600 w-5 h-5" />}
-                titulo="Certificados SSL"
-                paragrafo="Segurança de ponta a ponta Todos os dados trafegam com
-                  criptografia robusta. Proteção garantida com certificados
-                  atualizados e monitoramento contínuo."
-              />
-            </article>
+                <InfoBlock
+                  icon={<GiPadlock className="text-sky-600 w-5 h-5" />}
+                  titulo="Certificados SSL"
+                  paragrafo="Segurança de ponta a ponta Todos os dados trafegam com
+                      criptografia robusta. Proteção garantida com certificados
+                      atualizados e monitoramento contínuo."
+                />
+              </article>
+            </div>
           </section>
         </div>
       </main>

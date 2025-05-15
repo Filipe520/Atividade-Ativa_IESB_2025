@@ -7,6 +7,7 @@ import { ButtonCustom } from "@components/buttonCuston";
 import HeaderDesktop from "@components/layout/header/headerDesktop";
 import HeaderMobile from "@components/layout/header/headerMobile";
 import Image from "next/image";
+import styles from "./login.module.css";
 
 // Icone
 import { MdOutlinePersonOutline } from "react-icons/md";
@@ -19,7 +20,7 @@ import imgMicrosoft from "@public/imagens/appStore.png";
 
 export default function Login() {
   return (
-    <main className={` bg-black/70`}>
+    <main className="bg-white">
       <HeaderDesktop />
       <HeaderMobile />
       <section className="ml-15 md:py-40 flex flex-col items-center justify-center">
@@ -49,8 +50,8 @@ export default function Login() {
             />
           </section>
           {/* Sessão do Formulário de Login */}
-          <section className="bg-white text-black min-[500px]:border border-black/20 flex flex-col items-center justify-center gap-5 min-[500px]:shadow-lg max-md:h-[100dvh] max-[500px]:h-[100dvh] max-md:w-full p-5  md:rounded-r-2xl max-[500px]:rounded-none">
-            <section className="w-full pt-10">
+          <section className="bg-white text-black min-[500px]:border border-black/20 flex flex-col items-center justify-center gap-5 min-[500px]:shadow-lg max-md:h-[100dvh] max-[500px]:h-[100dvh] max-md:w-full w-[600px] p-5  md:rounded-r-2xl max-[500px]:rounded-none">
+            <section className="w-full pt-10 md:w-[400px]">
               <h1 className={`text-3xl font-bold mb-5`}>Entre na sua conta</h1>
               <p className="text-black/60 text-sm">
                 Acesse sua conta agora mesmo.
@@ -106,11 +107,11 @@ export default function Login() {
                 textButton="Entrar"
                 router="/home"
                 icone={<MdOutlinePersonOutline />}
-                color={`border border-transparent hover:border text-white rounded-md hover:border-sky-500 bg-sky-500 text-white w-full`}
+                color={`border border-transparent hover:border text-white rounded-md hover:border-sky-500 ${styles.bg_Custom} text-white w-full`}
               />
             </form>
 
-            <div className="flex items-center justify-between gap-2 w-full py-5">
+            <div className="flex items-center justify-center gap-2 w-full py-5">
               <div className="h-[.2px] w-[50px] bg-black/20"></div>
               <p className="text-center">Ou acesse Nosso app</p>
               <div className="h-[.2px] w-[50px] bg-black/20"></div>

@@ -2,26 +2,4 @@
   --background: #ffffff;
 
   --foreground: #171717;
-
-  --fundo: rgba(236, 236, 236, 0.966);
-
-  --color-black-01: black;
-
-  --color-white-01: rgba(255, 255, 255, 0.842);
-  --color-white-02: rgba(255, 255, 255, 0.384);
-
-  --bg-black-01: rgba(0, 0, 0, 0.897);
-
-  --bg-yellow-01: rgb(253, 253, 89);
-
-  --border-01: rgb(255, 255, 0);
-
-  --text-blue-01: rgb(0, 140, 255);
-  --text-yellow-02: rgb(227, 243, 0);
-
-  --text-white-01: rgb(175, 175, 175);
-  --text-white-02: rgb(247, 247, 247);
-  --text-white-03: white;
-
-  --text-transparent-01: rgba(255, 255, 255, 0.705);
 }

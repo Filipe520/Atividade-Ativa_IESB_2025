@@ -1,21 +1,10 @@
 import Link from "next/link";
 import { GoArrowLeft } from "react-icons/go";
 
-import Image from "next/image";
-import imgLogo from "@public/imagens/logo_sem_fundo.png";
-
 export default function NotFound() {
   return (
-    <article className="flex max-md:flex-col justify-center items-center mx-auto  bg-white min-[500px]:h-[900px] h-[500px] min-sm:py-5">
+    <article className="flex max-md:flex-col justify-center items-center mx-auto  bg-white min-[500px]:h-[900px] h-dvh min-sm:py-5">
       <section className="bg-white p-10 md:rounded-l-3xl  max-md:rounded-3xl flex flex-col md:w-xl justify-evenly h-full min-sm:border border-black/20 min-sm:ml-5">
-        <div className="inline-block">
-          <Image
-            src={imgLogo}
-            alt="Logo do banco BitNext"
-            width={40}
-            height={40}
-          />
-        </div>
         <div className="flex flex-col gap-5 ">
           <p className="text-indigo-600">404</p>
           <h1 className="md:text-5xl max-md:text-4xl font-black">

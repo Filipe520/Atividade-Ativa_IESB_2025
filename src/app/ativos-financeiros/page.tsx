@@ -6,7 +6,7 @@ import FormSearch from "@components/formSearch";
 
 import { useEffect, useState } from "react";
 
-const tickers = ["AAPL", "MSFT", "AMZN", "GOOGL"];
+const tickers = ["GOOGL"];
 // "AAPL", "MSFT", "TSLA", "AMZN", "GOOGL"
 export default function StockGrid() {
   const [stocks, setStocks] = useState([]);

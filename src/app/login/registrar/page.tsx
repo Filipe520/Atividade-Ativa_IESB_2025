@@ -22,13 +22,16 @@ export default function Registrar() {
       <div className="md:py-30">
         <main className="bg-white max-w-5xl flex items-center justify-center text-black md:rounded-xl overflow-hidden shadow-lg w-full min-sm:border border-black/30">
           {/* Lado esquerdo */}
-          <section className="hidden md:flex items-center justify-center flex-col px-2  gap-6 bg-neutral-900 h-[700px]">
-            <div className="text-center text-white">
-              <h2 className="text-2xl font-bold mb-2">
-                Abra sua conta digital e tenha controle total do seu dinheiro
-                cripto.
-              </h2>
-              <p className="text-yellow-200">Abra sua conta cripto grátis.</p>
+          <section className="hidden md:flex items-center justify-center flex-col px-2  gap-6 bg-white h-[700px]">
+            <div className="text-black w-[300px] p-5">
+              <h2 className="text-3xl">Abra sua conta</h2>
+              <p className="text-[17px] pb-10 text-black/60">
+                digital e tenha controle total do seu dinheiro{" "}
+                <strong>cripto</strong>.
+              </p>
+              <p className="text-yellow-700">
+                Sua conta <strong>cripto</strong> grátis.
+              </p>
             </div>
             <Image
               src="/imagens/finance-register.svg"
@@ -39,7 +42,7 @@ export default function Registrar() {
           </section>
 
           {/* Lado direito */}
-          <section className="md:border-l border-gray-300/80  w-full px-8 py-10 flex flex-col md:justify-between max-md:justify-center max-md:h-dvh max-[500px]:ml-12 max-md:ml-12">
+          <section className="md:border-l border-gray-300/80 px-8 py-10 flex flex-col md:justify-between max-md:justify-center max-md:h-dvh max-[500px]:ml-12 max-md:ml-12 min-md:w-[500px] min-lg:w-[900px]">
             <section>
               <section className="w-full py-10">
                 <h1 className={`text-3xl font-bold mb-5`}>Cadastre-se</h1>

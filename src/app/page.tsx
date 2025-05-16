@@ -59,7 +59,7 @@ export default function Home() {
 
               <article className="flex max-[500px]:justify-center gap-10 pb-20 w-full min-[500px]:pt-10">
                 <ButtonCustom
-                  textButton="Login"
+                  textButton="Entrar"
                   router="/login"
                   icone={<MdOutlinePersonOutline />}
                   color={`${styles.bg_Custon} border border-transparent hover:border text-white rounded-md hover:border-sky-500 min-md:w-[200px]`}

@@ -10,8 +10,6 @@
 .footerFilho {
   padding: 10px 0;
 
-  color: var(--color-white-02);
-
   transition: color 0.5s ease;
 
   display: flex;
@@ -30,23 +28,6 @@
   font-size: 1.4em;
 
   cursor: pointer;
-}
-
-.footer svg:hover {
-  color: var(--text-blue-01);
-}
-
-.footer:hover {
-  color: var(--color-white-01);
-}
-
-.copy2025 {
-  transition: color 0.5s ease;
-}
-
-.copy2025:hover {
-  text-decoration: underline;
-  color: var(--text-blue-01);
 }
 
 @media (max-width: 768px) {

@@ -26,7 +26,7 @@ export default function Login() {
       <section className="ml-15 md:py-40 flex flex-col items-center justify-center">
         <div className="flex flex-col md:flex-row justify-center items-center  w-full">
           {/* sessão da Logo */}
-          <section className="ml-5 md:flex hidden flex-col items-center justify-evenly gap-5 bg-blue-950 text-white w-100 h-150 p-10 rounded-l-2xl shadow-lg ">
+          <section className="ml-5 md:flex hidden flex-col items-center justify-evenly gap-5 bg-sky-950 text-white w-100 h-150 p-10 rounded-l-2xl shadow-lg ">
             <article>
               <section className="flex items-center justify-center gap-2 py-5">
                 <div>
@@ -50,7 +50,7 @@ export default function Login() {
             />
           </section>
           {/* Sessão do Formulário de Login */}
-          <section className="bg-white text-black min-[500px]:border border-black/20 flex flex-col items-center justify-center gap-5 min-[500px]:shadow-lg max-md:h-[100dvh] max-[500px]:h-[100dvh] max-md:w-full w-[600px] p-5  md:rounded-r-2xl max-[500px]:rounded-none">
+          <section className="bg-white text-black min-[500px]:border border-black/20 flex flex-col items-center justify-center gap-5 min-[500px]:shadow-lg max-md:h-[100dvh] max-[500px]:h-[100dvh] max-md:w-full w-[600px] p-5  md:rounded-r-2xl max-[500px]:rounded-none min-lg:w-[900px]">
             <section className="w-full pt-10 md:w-[400px]">
               <h1 className={`text-3xl font-bold mb-5`}>Entre na sua conta</h1>
               <p className="text-black/60 text-sm">
@@ -66,7 +66,7 @@ export default function Login() {
                 <Input
                   placeholder="Digite seu melhor e-mail..."
                   type="email"
-                  color="bg-black/5 text-black"
+                  color="bg-black/5 text-black w-full"
                   id="email"
                 />
               </div>
@@ -82,7 +82,7 @@ export default function Login() {
                 <Input
                   placeholder="Digite sua senha..."
                   type="password"
-                  color="bg-black/5 text-black"
+                  color="bg-black/5 text-black w-full"
                   id="password"
                 />
               </div>

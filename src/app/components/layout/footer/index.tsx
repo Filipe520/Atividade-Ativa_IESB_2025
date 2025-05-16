@@ -23,14 +23,14 @@ export default function FooterLogin() {
               <li className="hover:underline cursor-pointer">Termos de uso</li>
             </ul>
           </section>
-          <p className="pt-5">
+          <p className="pt-5 text-gray-400">
             <strong>Banco BitNEXT</strong>, Inc. ou suas afiliadas. Todos os
             direitos reservados.
           </p>
         </div>
         <div className={styles.footerFilho}>
           <ul className="flex items-center justify-around w-full py-7">
-            <li>
+            <li className=" hover:text-sky-500">
               <Link
                 href="https://www.facebook.com/FilipeA520/"
                 target="_blank"
@@ -39,7 +39,7 @@ export default function FooterLogin() {
                 <FaFacebook />
               </Link>
             </li>
-            <li>
+            <li className=" hover:text-sky-500">
               <Link
                 href="https://www.instagram.com/filipealves520/"
                 target="_blank"
@@ -48,7 +48,7 @@ export default function FooterLogin() {
                 <FaInstagram />
               </Link>
             </li>
-            <li>
+            <li className=" hover:text-sky-500">
               <Link
                 href="https://github.com/Filipe520"
                 target="_blank"
@@ -57,7 +57,7 @@ export default function FooterLogin() {
                 <FaGithub />
               </Link>
             </li>
-            <li>
+            <li className=" hover:text-sky-500">
               <Link
                 href="https://x.com/FilipeAlve89789"
                 target="_blank"
@@ -68,9 +68,9 @@ export default function FooterLogin() {
             </li>
           </ul>
 
-          <p className="text-gray-400 text-center">Copyright &copy; 2025</p>
+          <p className="text-gray-500 text-center">Copyright &copy; 2025</p>
 
-          <div className="flex gap-2 text-white/80 mt-2">
+          <div className="flex gap-2 mt-2 hover:text-sky-500 text-white/70 py-5">
             <Link
               href="https://github.com/Filipe520"
               target="_blank"
@@ -85,7 +85,7 @@ export default function FooterLogin() {
                 href="https://github.com/Filipe520"
                 target="_blank"
                 rel="external"
-                className={styles.copy2025}
+                className={`${styles.copy2025}`}
               >
                 Filipe Alves
               </Link>

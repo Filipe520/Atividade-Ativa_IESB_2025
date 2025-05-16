@@ -1,5 +1,8 @@
 "use client";
 
+// Styles
+import styles from "./styles.module.css";
+
 // Lib do Next
 import Link from "next/link";
 import Image from "next/image";
@@ -21,7 +24,7 @@ export default function HeaderDesktop() {
       className={`
         flex justify-around items-center w-full
          md:bg-black/90 text-white md:pt-5 min-md:pb-5
-         ${inter.className}`}
+         ${inter.className} md:h-[120px]`}
     >
       {/* Desktop */}
       <div className="md:flex hidden items-center pl-5 pt-1">
@@ -42,20 +45,20 @@ export default function HeaderDesktop() {
         <HeaderDesktopLinks />
       </nav>
       <section
-        className={`flex items-center max-md:hidden gap-2 text-sm  w-70`}
+        className={`flex items-center max-md:hidden gap-5 text-sm  w-70`}
       >
         {/* Botão Entrar */}
         <ButtonCustom
-          textButton="Login"
+          textButton="Entrar"
           router="/login"
           icone={<MdOutlinePersonOutline />}
-          color={`border border-transparent hover:border text-white rounded-md hover:border-sky-500`}
+          color={`border border-transparent hover:border text-white rounded-md hover:border-sky-500 ${styles.bg_Custon}`}
         />
         <ButtonCustom
           textButton="Inscreva-se"
           router="/login/registrar"
           icone={<CiLogin />}
-          color={`text-white rounded-md border border-transparent hover:border-white`}
+          color={`text-white rounded-md border border-transparent hover:border-white bg-black`}
         />
       </section>
     </header>

@@ -89,6 +89,7 @@ export default function Home() {
                   alt="Imagem do Iphone 12"
                   width={400}
                   height={400}
+                  className=""
                 />
               </article>
 

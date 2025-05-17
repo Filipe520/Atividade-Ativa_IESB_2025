@@ -1,12 +1,10 @@
 @import "tailwindcss";
 
-@import "./variables.css";
-
 * {
   box-sizing: border-box;
 }
 
 body {
-  color: var(--foreground);
+  color: black;
   font-family: Arial, Helvetica, sans-serif;
 }

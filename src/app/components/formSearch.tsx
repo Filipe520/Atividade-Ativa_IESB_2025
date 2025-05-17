@@ -1,38 +1,26 @@
 "use client";
 
-import { useState } from "react";
-import { useRouter } from "next/navigation";
 import { IoSearchOutline } from "react-icons/io5";
+import { useRouter } from "next/navigation";
 
 type FormSearchProps = {
   placeholder?: string;
-  handledMenu?: boolean;
-  widthInput?: string;
+  styles?: string;
+  rota: string;
 };
 
 export default function FormSearch({
   placeholder,
-  handledMenu,
-  widthInput,
+  styles,
+  rota,
 }: FormSearchProps) {
-  const [inputValue, setInputValue] = useState("");
   const router = useRouter();
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-
-    if (inputValue.trim() === "") return;
-
-    // Redireciona para a página com o ticker
-    router.push(`/stock/${inputValue.toUpperCase()}`);
-  };
 
   return (
     <form
-      onSubmit={handleSubmit}
-      className={`transition-all ease-out ${
-        handledMenu ? widthInput : "w-10"
-      } bg-black/70 p-2 rounded-md text-white flex text-base`}
+      className={`transition-all ease-out ${styles} 
+       p-2 my-10 text-black flex items-center justify-center text-base rounded-2xl border border-sky-500`}
+      action={() => router.push(`${rota}`)}
     >
       <label htmlFor="idSearch" className="cursor-pointer m-1 ">
         <IoSearchOutline />
@@ -41,11 +29,7 @@ export default function FormSearch({
         type="text"
         placeholder={placeholder || "Search..."}
         id="idSearch"
-        value={inputValue}
-        onChange={(e) => setInputValue(e.target.value)}
-        className={`${
-          handledMenu ? "flex" : "hidden"
-        } ml-5 pl-1 ${widthInput} outline-none animate-pulse bg-transparent`}
+        className={`ml-5 pl-1 outline-none animate-pulse bg-transparent`}
       />
     </form>
   );

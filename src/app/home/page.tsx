@@ -1,5 +1,3 @@
-import styles from "./styles.module.css";
-
 import HeaderDesktop from "@components/layout/header/headerDesktop";
 import HeaderMobile from "@components/layout/header/headerMobile";
 
@@ -17,7 +15,7 @@ import { RiExchangeDollarFill } from "react-icons/ri";
 export default function Home() {
   return (
     <div className={`bg-black/90`}>
-      <HeaderDesktop />
+      <HeaderDesktop styles="text-white/90 border-white" />
       <HeaderMobile />
       <article className="flex flex-col w-[md] max-[500px]:ml-5 text-white min-[500px]:mt-10 min-[500px]:max-w-[1200px] min-[500px]:m-auto">
         <section className="w-full max-[500px]:bg-black/95 h-full pb-15">

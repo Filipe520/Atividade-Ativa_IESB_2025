@@ -19,7 +19,7 @@ export default function Registrar() {
     <div className="flex items-center justify-center flex-col bg-white w-full">
       <HeaderDesktop />
       <HeaderMobile />
-      <div className="md:py-30">
+      <div className="md:pt-20 md:pb-30">
         <main className="bg-white max-w-5xl flex items-center justify-center text-black md:rounded-xl overflow-hidden shadow-lg w-full min-sm:border border-black/30">
           {/* Lado esquerdo */}
           <section className="hidden md:flex items-center justify-center flex-col px-2  gap-6 bg-white h-[700px]">

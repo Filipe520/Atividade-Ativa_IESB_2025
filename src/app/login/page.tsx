@@ -16,17 +16,17 @@ import { MdOutlinePersonOutline } from "react-icons/md";
 import imgLogin from "@public/imagens/login.svg";
 import imgLogo from "@public/imagens/logo_sem_fundo.png";
 import imgGoogle from "@public/imagens/google_play.png";
-import imgMicrosoft from "@public/imagens/appStore.png";
+import imgMicrosoft from "@public/imagens/AppStore.png";
 
 export default function Login() {
   return (
     <main className="bg-white">
       <HeaderDesktop />
       <HeaderMobile />
-      <section className="ml-15 md:py-40 flex flex-col items-center justify-center">
+      <section className="max-md:ml-15 min-md:mx-5 md:pt-20 md:pb-30 flex flex-col items-center justify-center">
         <div className="flex flex-col md:flex-row justify-center items-center  w-full">
           {/* sessão da Logo */}
-          <section className="ml-5 md:flex hidden flex-col items-center justify-evenly gap-5 bg-sky-950 text-white w-100 h-150 p-10 rounded-l-2xl shadow-lg ">
+          <section className="md:flex hidden flex-col items-center justify-evenly gap-5 bg-sky-950 text-white w-100 h-[684px] p-10 rounded-l-2xl shadow-lg ">
             <article>
               <section className="flex items-center justify-center gap-2 py-5">
                 <div>
@@ -124,6 +124,15 @@ export default function Login() {
               <Link href="#">
                 <Image src={imgMicrosoft} alt="Aplicativo Google Play" />
               </Link>
+            </section>
+
+            <section className="py-5">
+              <p className="text-sm text-gray-700">
+                Ainda não tem uma conta?{" "}
+                <Link href="/login/registrar" className="text-blue-600">
+                  Cadastre-se gratuitamente
+                </Link>
+              </p>
             </section>
           </section>
         </div>

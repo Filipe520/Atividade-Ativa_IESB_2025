@@ -15,10 +15,6 @@ import { MdOutlinePersonOutline } from "react-icons/md";
 import { useState } from "react";
 import Link from "next/link";
 
-// Font
-import { Inter } from "next/font/google";
-const inter = Inter({ subsets: ["cyrillic-ext"] });
-
 // Image da logo
 import Image from "next/image";
 import imgLogo from "@public/imagens/logo_sem_fundo.png";
@@ -29,7 +25,7 @@ export default function HeaderMobile() {
     <>
       {/*NavBar Mobile */}
       <section
-        className={`${inter} w-screen md:hidden flex justify-between md:bg-white/10`}
+        className={` w-screen md:hidden flex justify-between md:bg-white/10`}
       >
         {/* Menu aberto ?*/}
         <nav

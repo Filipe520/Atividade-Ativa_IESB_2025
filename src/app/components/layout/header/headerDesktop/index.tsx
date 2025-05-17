@@ -2,10 +2,6 @@
 import Link from "next/link";
 import Image from "next/image";
 
-// Font
-import { Inter } from "next/font/google";
-const inter = Inter({ subsets: ["cyrillic-ext"] });
-
 import { MdOutlinePersonOutline } from "react-icons/md";
 
 // Componentes
@@ -23,7 +19,7 @@ export default function HeaderDesktop({ styles = "text-black/75" }: Prop) {
       className={`
         flex justify-around items-center w-full
           ${styles} md:pt-5 min-md:pb-5
-         ${inter.className} md:h-[120px]`}
+          md:h-[120px]`}
     >
       {/* Logo */}
       <div className="md:flex hidden items-center pt-1 flex-initial">

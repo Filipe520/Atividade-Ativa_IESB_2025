@@ -28,13 +28,13 @@ export default function Home() {
           className="h-dvh w-full flex flex-col justify-center items-center m-auto bg-no-repeat bg-fixed bg-cover bg-center"
           style={{ backgroundImage: "url(/imagens/logo.png)" }}
         >
-          <div className="mx-auto flex flex-col  h-dvh w-full  bg-black/90">
+          <div className="mx-auto flex flex-col  h-dvh w-full  bg-black/90 ">
             {/* <HeaderDesktop /> */}
             <HeaderDesktop styles="text-white border-white" />
             {/* <HeaderMobile /> */}
             <HeaderMobile />
-            <section className="p-2 flex flex-col gap-5 max-[500px]:justify-center justify-around max-[600px]:items-center min-[500px]:max-w-[1000px] w-full min-[500px]:h-4/5 min-[500px]:ml-14 m-auto">
-              <article className="flex flex-col gap-10">
+            <section className="p-2 flex flex-col gap-5 max-[500px]:justify-center justify-around min-[500px]:max-w-[1000px] min-[500px]:h-4/5 max-md:ml-14 m-auto ">
+              <article className="flex flex-col gap-10 ">
                 <h1
                   className={`text-5xl min-[400px]:text-7xl font-extralight w-full pt-10  ${styles.color_custon}`}
                 >
@@ -74,7 +74,7 @@ export default function Home() {
           </div>
         </section>
         <div className="w-full">
-          <section className="bg-white rounded-3xl flex flex-col p-5 py-20 justify-between items-center max-md:ml-15">
+          <section className="bg-white rounded-3xl flex flex-col p-5 py-20 justify-between items-center max-md:ml-12">
             <div className="flex flex-col justify-center items-center w-full">
               <article>
                 <h2 className={` text-black text-4xl text-center  pb-10`}>

@@ -33,8 +33,8 @@ export default function Home() {
             <HeaderDesktop styles="text-white border-white" />
             {/* <HeaderMobile /> */}
             <HeaderMobile />
-            <section className="p-2 flex flex-col gap-5 max-[500px]:justify-center justify-around min-[500px]:max-w-[1000px] min-[500px]:h-4/5 max-md:ml-14 m-auto ">
-              <article className="flex flex-col gap-10 ">
+            <section className="p-2 flex flex-col gap-5 max-[500px]:justify-center justify-around min-[500px]:max-w-[1000px] min-[500px]:h-4/5  min-md:m-auto ">
+              <article className="flex flex-col gap-10 max-md:ml-14">
                 <h1
                   className={`text-5xl min-[400px]:text-7xl font-extralight w-full pt-10  ${styles.color_custon}`}
                 >

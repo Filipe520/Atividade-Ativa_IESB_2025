@@ -32,7 +32,7 @@ export default function HeaderMobile() {
           className={`${
             handledMenu ? "opacity-100 w-75 h-dvh" : "w-15 h-screen"
           }
-          md:hidden flex flex-col bg-black text-white left-0 top-0 rounded-sm transition-all fixed`}
+          md:hidden flex flex-col bg-black text-white left-0 top-0 transition-all fixed`}
         >
           {/* Humburguer */}
           <div

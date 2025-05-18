@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## BitNext Bank
 
-## Getting Started
+Acesse agora: [BitNext](https://atividade-ativa-iesb-2025-pisu.vercel.app/)
 
-First, run the development server:
+### Imagens do Projeto
+
+<div align="center">
+    <img src="public/imagem-01.png" alt="Imagem 1" width="300"/>
+    <img src="public/imagem-02.png" alt="Imagem 2" width="300"/>
+    <img src="public/imagem-03.png" alt="Imagem 3" width="300"/>
+    <img src="public/imagem-04.png" alt="Imagem 4" width="300"/>
+    <img src="public/imagem-05.png" alt="Imagem 5" width="300"/>
+    <img src="public/imagem-06.png" alt="Imagem 6" width="300"/>
+    <img src="public/imagem-07.png" alt="Imagem 7" width="300"/>
+    <img src="public/imagem-08.png" alt="Imagem 8" width="300"/>
+    <img src="public/imagem-09.png" alt="Imagem 9" width="300"/>
+    <img src="public/imagem-10.png" alt="Imagem 10" width="300"/>
+    <img src="public/imagem-11.png" alt="Imagem 11" width="300"/>
+    <img src="public/imagem-12.png" alt="Imagem 12" width="300"/>
+</div>
+
+---
+
+- [Acesse o site](https://atividade-ativa-iesb-2025-pisu.vercel.app/)
+- [Repositório no GitHub](https://github.com/Filipe520/Atividade-Ativa_IESB_2025)
+
+---
+
+## Sobre o Projeto
+
+Este é um projeto [Next.js](https://nextjs.org) criado com [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+## Como Executar
+
+Para iniciar o servidor de desenvolvimento:
 
 ```bash
 npm run dev
-# or
+# ou
 yarn dev
-# or
+# ou
 pnpm dev
-# or
+# ou
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000) no navegador para visualizar o resultado.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Edite a página modificando `app/page.tsx`. As alterações são aplicadas automaticamente.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Este projeto utiliza [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) para otimizar e carregar a fonte [Geist](https://vercel.com/font).
 
-## Learn More
+## Saiba Mais
 
-To learn more about Next.js, take a look at the following resources:
+- [Documentação Next.js](https://nextjs.org/docs)
+- [Tutorial Interativo Next.js](https://nextjs.org/learn)
+- [Repositório Next.js no GitHub](https://github.com/vercel/next.js)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deploy
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+A maneira mais fácil de fazer deploy do seu app Next.js é usando a [Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme).
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Veja a [documentação de deploy do Next.js](https://nextjs.org/docs/app/building-your-application/deploying) para mais detalhes.

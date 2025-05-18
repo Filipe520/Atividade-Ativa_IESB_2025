@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Banco Cripto - A Nova Era das Finanças",
+  title: "Banco BitNext - A Nova Era das Finanças",
   description:
     "Transforme suas finanças com a segurança e transparência da tecnologia blockchain.",
 };

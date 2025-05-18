@@ -25,7 +25,7 @@ export default function HeaderMobile() {
     <>
       {/*NavBar Mobile */}
       <section
-        className={` w-screen md:hidden flex justify-between md:bg-white/10`}
+        className={` w-dvh md:hidden flex justify-between md:bg-white/10`}
       >
         {/* Menu aberto ?*/}
         <nav

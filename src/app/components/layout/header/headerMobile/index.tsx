@@ -24,13 +24,11 @@ export default function HeaderMobile() {
   return (
     <>
       {/*NavBar Mobile */}
-      <section
-        className={` w-dvh md:hidden flex justify-between md:bg-white/10`}
-      >
+      <section className={`md:hidden`}>
         {/* Menu aberto ?*/}
         <nav
           className={`${
-            handledMenu ? "opacity-100 w-75 h-dvh" : "w-15 h-screen"
+            handledMenu ? "opacity-100 w-75 h-dvh" : "w-15 h-[105dvh]"
           }
           md:hidden flex flex-col bg-black text-white left-0 top-0 transition-all fixed`}
         >

@@ -4,19 +4,19 @@ Acesse agora: [BitNext](https://atividade-ativa-iesb-2025-pisu.vercel.app/)
 
 ### Imagens do Projeto
 
-<div align="center">
-    <img src="public/imagem-01.png" alt="Imagem 1" width="300"/>
-    <img src="public/imagem-02.png" alt="Imagem 2" width="300"/>
-    <img src="public/imagem-03.png" alt="Imagem 3" width="300"/>
-    <img src="public/imagem-04.png" alt="Imagem 4" width="300"/>
-    <img src="public/imagem-05.png" alt="Imagem 5" width="300"/>
-    <img src="public/imagem-06.png" alt="Imagem 6" width="300"/>
-    <img src="public/imagem-07.png" alt="Imagem 7" width="300"/>
-    <img src="public/imagem-08.png" alt="Imagem 8" width="300"/>
-    <img src="public/imagem-09.png" alt="Imagem 9" width="300"/>
-    <img src="public/imagem-10.png" alt="Imagem 10" width="300"/>
-    <img src="public/imagem-11.png" alt="Imagem 11" width="300"/>
-    <img src="public/imagem-12.png" alt="Imagem 12" width="300"/>
+<div>
+    <img src="public/imagem-01.png" alt="Imagem 1"/>
+    <img src="public/imagem-02.png" alt="Imagem 2"/>
+    <img src="public/imagem-03.png" alt="Imagem 3"/>
+    <img src="public/imagem-04.png" alt="Imagem 4"/>
+    <img src="public/imagem-05.png" alt="Imagem 5"/>
+    <img src="public/imagem-06.png" alt="Imagem 6"/>
+    <img src="public/imagem-07.png" alt="Imagem 7"/>
+    <img src="public/imagem-08.png" alt="Imagem 8"/>
+    <img src="public/imagem-09.png" alt="Imagem 9"/>
+    <img src="public/imagem-10.png" alt="Imagem 10"/>
+    <img src="public/imagem-11.png" alt="Imagem 11"/>
+    <img src="public/imagem-12.png" alt="Imagem 12"/>
 </div>
 
 ---

@@ -37,7 +37,7 @@ export default function HeaderDesktop({ styles = "text-black/75" }: Prop) {
       </div>
 
       {/* Links */}
-      <nav className="md:flex justify-center gap-2.5  hidden flex-initial">
+      <nav className="md:flex justify-center gap-2.5  hidden flex-initial bg-black/5 p-3 rounded-full">
         <HeaderDesktopLinks styles={styles} />
       </nav>
 

@@ -100,7 +100,7 @@ export default function HeaderMobile() {
               </div>
               {/* Botão Sign up */}
               <div className="flex items-center">
-                <Link href="/login/registrar">
+                <Link href="/login/register">
                   <CiLogin
                     className={`text-xl" ${
                       handledMenu ? "hidden" : "block"
@@ -114,7 +114,7 @@ export default function HeaderMobile() {
                 >
                   <CiLogin className="text-xl" />
                   <Link
-                    href="/login/registrar"
+                    href="/login/register"
                     className="hover:text-gray-900 animate-pulse"
                   >
                     Inscreva-se

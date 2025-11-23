@@ -47,8 +47,9 @@ export default function HeaderDesktop({ styles = "text-black/75" }: Prop) {
       >
         {/* Botão Entrar */}
         <ButtonCustom
+          type="button"
           textButton="Entrar"
-          router="/login"
+          router=""
           icone={<MdOutlinePersonOutline />}
           color={`border  hover:border ${styles} rounded-md hover:border-sky-500 active:text-sky-500`}
         />

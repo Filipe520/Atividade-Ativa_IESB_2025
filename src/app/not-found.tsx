@@ -1,4 +1,4 @@
-"use cliente";
+"use client";
 
 import Link from "next/link";
 import { GoArrowLeft } from "react-icons/go";

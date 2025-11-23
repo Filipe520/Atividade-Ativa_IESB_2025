@@ -1,26 +1,37 @@
-import Link from "next/link";
 import React from "react";
+import { useRouter } from "next/navigation";
 
 interface ButtonCustomProps {
   textButton: string;
-  router: string;
   icone?: React.ReactNode;
   color?: string;
+  router?: string;
+  type: "submit" | "button";
 }
 
 export const ButtonCustom: React.FC<ButtonCustomProps> = ({
   textButton,
-  router,
   icone,
   color = "",
+  router,
+  type,
 }) => {
+  if (router) {
+  }
+  const navigate = useRouter();
+
+  const handleClick = () => {
+    navigate.push(`${router}`);
+  };
+
   return (
-    <Link
-      href={router}
+    <button
+      type={type}
+      onClick={handleClick}
       className={`flex items-center gap-2 justify-center px-4 py-2 ${color}`}
     >
       {icone}
       <span>{textButton}</span>
-    </Link>
+    </button>
   );
 };

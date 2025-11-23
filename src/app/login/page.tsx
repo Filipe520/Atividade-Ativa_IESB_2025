@@ -1,3 +1,5 @@
+"use client";
+
 // Lib do Next
 import Link from "next/link";
 
@@ -8,6 +10,7 @@ import HeaderDesktop from "@components/layout/header/headerDesktop";
 import HeaderMobile from "@components/layout/header/headerMobile";
 import Image from "next/image";
 import styles from "./login.module.css";
+import { backend_Login } from "./logic/backend_Login";
 
 // Icone
 import { MdOutlinePersonOutline } from "react-icons/md";
@@ -17,8 +20,38 @@ import imgLogin from "@public/imagens/login.svg";
 import imgLogo from "@public/imagens/logo_sem_fundo.png";
 import imgGoogle from "@public/imagens/google_play.png";
 import imgMicrosoft from "@public/imagens/AppStore.png";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
+
+type BackendUser = {
+  id?: string;
+  userName?: string;
+  fullName?: string;
+  email?: string;
+};
+
+export type BackendResponse = {
+  msg?: string;
+  token?: string;
+  user?: BackendUser;
+} | null;
 
 export default function Login() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [responseBackend, setResponseBackend] = useState<BackendResponse>(null);
+
+  const navigate = useRouter();
+  const handledSubmitLogin = (event: React.FormEvent) => {
+    event.preventDefault();
+
+    backend_Login(email, password, setResponseBackend);
+
+    if (responseBackend?.msg === "Login efetuado com sucesso") {
+      navigate.push("/home");
+    }
+  };
+
   return (
     <main className="bg-white">
       <HeaderDesktop />
@@ -59,7 +92,7 @@ export default function Login() {
             </section>
             {/* Formulário */}
             <form
-              action="#"
+              onSubmit={handledSubmitLogin}
               className="flex flex-col gap-5 w-full  md:w-[400px] mt-5"
             >
               <div className="w-full">
@@ -68,6 +101,7 @@ export default function Login() {
                   type="email"
                   color="bg-black/5 text-black w-full"
                   id="email"
+                  onChangeValue={setEmail}
                 />
               </div>
               <p className="text-right text-xs">
@@ -84,6 +118,7 @@ export default function Login() {
                   type="password"
                   color="bg-black/5 text-black w-full"
                   id="password"
+                  onChangeValue={setPassword}
                 />
               </div>
 
@@ -104,8 +139,9 @@ export default function Login() {
                 </div>
               </article>
               <ButtonCustom
+                type="submit"
+                router=""
                 textButton="Entrar"
-                router="/home"
                 icone={<MdOutlinePersonOutline />}
                 color={`border border-transparent hover:border text-white rounded-md hover:border-sky-500 ${styles.bg_Custom} text-white w-full`}
               />

@@ -1,3 +1,5 @@
+"use client";
+
 // componentes
 import HeaderMobile from "@components/layout/header/headerMobile";
 import HeaderDesktop from "@components/layout/header/headerDesktop";

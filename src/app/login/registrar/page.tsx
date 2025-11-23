@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
 
 import styles from "./styles.module.css";
 
@@ -10,11 +13,23 @@ import HeaderMobile from "@components/layout/header/headerMobile";
 // Componente
 import Input from "@components/input";
 import { ButtonCustom } from "@components/buttonCuston";
+import { backend_register } from "../logic/backend_Register";
 
 // icon
 import { AiOutlineAudit } from "react-icons/ai";
 
 export default function Registrar() {
+  const [userName, setUserName] = useState("");
+  const [fullName, setFullName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handledSubmit = (e: React.FormEvent) => {
+    // Vai previnir o ENVIO do formulário
+    e.preventDefault();
+    backend_register(userName, fullName, email, password);
+  };
+
   return (
     <div className="flex items-center justify-center flex-col bg-white w-full">
       <HeaderDesktop />
@@ -51,33 +66,38 @@ export default function Registrar() {
                 </p>
               </section>
 
-              <form className="flex flex-col gap-4">
+              <form className="flex flex-col gap-4" onSubmit={handledSubmit}>
                 <Input
-                  id="email"
+                  type="text"
+                  placeholder="Nome de utilizador"
                   color="bg-black/5 text-black"
-                  type="email"
-                  placeholder="Número de telefone ou e-mail"
-                />
-                <Input
-                  type="password"
-                  placeholder="Palavra-passe"
-                  color="bg-black/5 text-black"
-                  id="password"
+                  id="nameUsed"
+                  onChangeValue={setUserName}
                 />
                 <Input
                   type="text"
                   placeholder="Nome completo"
                   color="bg-black/5 text-black"
                   id="fullName"
+                  onChangeValue={setFullName}
                 />
                 <Input
-                  type="text"
-                  placeholder="Nome de utilizador"
+                  id="email"
                   color="bg-black/5 text-black"
-                  id="nameUsed"
+                  type="email"
+                  placeholder="Informe seu e-mail"
+                  onChangeValue={setEmail}
+                />
+                <Input
+                  type="password"
+                  placeholder="Palavra-passe"
+                  color="bg-black/5 text-black"
+                  id="password"
+                  onChangeValue={setPassword}
                 />
                 <ButtonCustom
-                  router="/login"
+                  type="submit"
+                  router=""
                   textButton="Registar"
                   icone={<AiOutlineAudit />}
                   color={`${styles.bg_Custon} text-white rounded-xl border border-transparent hover:border-blue-500`}

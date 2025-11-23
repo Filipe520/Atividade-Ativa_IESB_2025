@@ -23,7 +23,7 @@ export const ButtonCustom: React.FC<ButtonCustomProps> = ({
   const navigate = useRouter();
 
   const handleClick = () => {
-    navigate.push(`${router}`);
+    if (router) navigate.push(`${router}`);
   };
 
   return (

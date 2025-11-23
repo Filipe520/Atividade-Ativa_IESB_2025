@@ -69,7 +69,7 @@ export default function Home() {
                 <ButtonCustom
                   textButton="Inscreva-se"
                   type="button"
-                  router="/register"
+                  router="login/register"
                   icone={<CiLogin />}
                   color={`text-white rounded-md border border-transparent hover:border-white min-md:w-[200px]`}
                 />

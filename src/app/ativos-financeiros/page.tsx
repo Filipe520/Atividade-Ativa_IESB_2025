@@ -1,3 +1,5 @@
+"use client";
+
 import HeaderDesktop from "@components/layout/header/headerDesktop";
 import HeaderMobile from "@components/layout/header/headerMobile";
 import FormSearch from "@components/formSearch";

@@ -1,3 +1,5 @@
+"use cliente";
+
 import Link from "next/link";
 import { GoArrowLeft } from "react-icons/go";
 
@@ -26,14 +28,7 @@ export default function NotFound() {
           </div>
         </div>
       </section>
-      <section
-        className="bg-white flex justify-start items-center rounded-r-3xl my-5 md:w-xl h-full mr-5 max-md:hidden"
-        style={{
-          backgroundImage: "url('/imagens/not-found-2.jpg')",
-          backgroundPosition: "center, center",
-          backgroundSize: "cover",
-        }}
-      ></section>
+      <section className="bg-[url('/imagens/not-found-2.jpg')] bg-center bg-cover bg-no-repeat hidden max-md:hidden md:flex justify-start items-center rounded-r-3xl my-5 md:w-xl h-full mr-5"></section>
     </article>
   );
 }

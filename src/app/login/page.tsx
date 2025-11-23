@@ -165,7 +165,7 @@ export default function Login() {
             <section className="py-5">
               <p className="text-sm text-gray-700">
                 Ainda não tem uma conta?{" "}
-                <Link href="/login/registrar" className="text-blue-600">
+                <Link href="/login/register" className="text-blue-600">
                   Cadastre-se gratuitamente
                 </Link>
               </p>

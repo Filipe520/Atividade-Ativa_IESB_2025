@@ -30,7 +30,7 @@ export const ButtonCustom: React.FC<ButtonCustomProps> = ({
     <button
       type={type}
       onClick={handleClick}
-      className={`flex items-center gap-2 justify-center px-4 py-2 ${color}`}
+      className={`flex items-center gap-2 justify-center px-4 py-2 ${color} cursor-pointer transition-colors duration-300 active:opacity-80 ease-in`}
     >
       {icone}
       <span>{textButton}</span>

@@ -112,9 +112,12 @@ export default function Registrar() {
 
             <section className="text-center mt-8">
               <p className="text-sm">Já possui conta?</p>
-              <a href="#" className="text-blue-600 hover:underline text-sm">
-                <Link href="/login">Inicia sessão.</Link>
-              </a>
+              <Link
+                href="/login"
+                className="text-blue-600 hover:underline text-sm"
+              >
+                Inicia sessão.
+              </Link>
             </section>
           </section>
         </main>

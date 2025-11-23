@@ -60,6 +60,7 @@ export default function Home() {
 
               <article className="flex max-[500px]:justify-center gap-10 pb-20 w-full min-[500px]:pt-10">
                 <ButtonCustom
+                  type="button"
                   textButton="Entrar"
                   router="/login"
                   icone={<MdOutlinePersonOutline />}
@@ -67,7 +68,8 @@ export default function Home() {
                 />
                 <ButtonCustom
                   textButton="Inscreva-se"
-                  router="/login/registrar"
+                  type="button"
+                  router="/register"
                   icone={<CiLogin />}
                   color={`text-white rounded-md border border-transparent hover:border-white min-md:w-[200px]`}
                 />
